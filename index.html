@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Campaigns</title>
+    <!-- Link -->
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/green-planet.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1>Earth Campaign</h1>
+        <nav class="nav-bar-content">
+            <ul>
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#how-to">How to?</a></li>
+                <li><a href="#join-us">Join Us</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <main>
+        <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+        <div class="loader" id="loader">
+            <div class="cs-loader">
+                <div class="cs-loader-inner">
+                    <label>●</label>
+                    <label>●</label>
+                    <label>●</label>
+                    <label>●</label>
+                    <label>●</label>
+                    <label>●</label>
+                </div>
+            </div>
+        </div>
+        <section class="hero" id="hero-section">
+            <div class="banner-text">Save our <span id="hg-text">Planet</span>,
+                Save our <span id="hg-text">Future</span>
+            </div>
+            <div id="viewport">
+                <div id="world"> </div>
+            </div>
+        </section>
+        <section class="about-project" id="project">
+            <div class="about-project-container">
+                <h1 class="hidden-left">Mengapa kami butuh kalian?</h1>
+                <br>
+                <p class="hidden-left">Projek untuk menjaga bumi adalah suatu upaya untuk melindungi planet kita dari
+                    kerusakan lingkungan
+                    dan menjaga keseimbangan ekosistemnya. Dalam proyek ini, akan dilakukan berbagai tindakan seperti
+                    mengurangi emisi gas rumah kaca, mempromosikan energi terbarukan, mengurangi penggunaan plastik
+                    sekali pakai, serta mengedukasi masyarakat tentang cara hidup yang ramah lingkungan.</p>
+            </div>
+            <div class="about-project-3d">
+                <canvas id="c"></canvas>
+            </div>
+        </section>
+        <section class="about" id="how-to">
+            <div class="about-content">
+                <section class="hidden-right">
+                    <div class="about-text-container">
+                        <h2>Bagaimana untuk berpartisipasi?</h2>
+                    </div>
+                </section>
+            </div>
+            <div class="about-content">
+                <section class="hidden-left">
+                    <div class="card card-trash">
+                        <div class="temporary_text">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">Pengurangan Sampah</span>
+                            <span class="card_subtitle">Mengurangi Sampah dan Meningkatkan Manajemen Sampah yang Lebih
+                                Efektif.</span>
+                            <p class="card_description">
+                                Pengurangan sampah adalah suatu usaha untuk mengurangi jumlah sampah yang dihasilkan dan
+                                meningkatkan manajemen sampah yang lebih efektif. Hal ini dapat dilakukan dengan cara
+                                mengurangi
+                                penggunaan bahan-bahan yang sulit terurai dan memperbanyak penggunaan bahan daur ulang,
+                                serta
+                                meningkatkan kesadaran masyarakat dalam membuang sampah dengan benar.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="about-content">
+                <section class="hidden-right">
+                    <div class="card card-tree">
+                        <div class="temporary_text">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">Penanaman Pohon</span>
+                            <span class="card_subtitle">Menjaga Kualitas Lingkungan dengan Menanam Bibit Pohon.</span>
+                            <p class="card_description">
+                                Penanaman pohon adalah suatu kegiatan yang dilakukan untuk menanam bibit pohon dengan
+                                tujuan
+                                untuk memperbanyak jumlah pohon dan meningkatkan kualitas lingkungan. Penanaman pohon
+                                dapat
+                                memberikan manfaat dalam menyediakan oksigen, menyediakan habitat bagi hewan, mengurangi
+                                polusi
+                                udara, dan mencegah erosi.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="about-content">
+                <section class="hidden-left">
+                    <div class="card card-energy">
+                        <div class="temporary_text">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">Konservasi Energi</span>
+                            <span class="card_subtitle">Menghemat Penggunaan Energi dan Mengoptimalkan Sumber Energi
+                                Terbarukan.</span>
+                            <p class="card_description">
+                                Konservasi energi adalah suatu usaha untuk mengurangi penggunaan energi secara
+                                berlebihan
+                                dan
+                                memanfaatkan energi dengan lebih efisien. Hal ini dapat dilakukan dengan cara menghemat
+                                penggunaan listrik, mengoptimalkan pemanfaatan sumber energi terbarukan, dan menggunakan
+                                teknologi yang lebih ramah lingkungan.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="about-us" id="about">
+            <div class="text-container">
+                <section class="hidden-left">
+                    <div class="tentang-container">
+                        <h2>Tentang Kami</h2>
+                        <p>Earth Campaign adalah sebuah gerakan yang didedikasikan untuk menyelamatkan
+                            planet ini dan
+                            menciptakan masa depan yang berkelanjutan. </p>
+                </section>
+                <section class="hidden-right">
+                    <div class="visi-container">
+                        <h2>Visi</h2>
+                        <p>Visi kami adalah menjadikan bumi pertiwi yang lestari dengan tindakan kecil.
+                        </p>
+                    </div>
+                </section>
+                <section class="hidden-left">
+                    <div class="misi-container">
+                        <h2>Misi</h2>
+                        <p>Misi kami adalah menginspirasi dan memberdayakan orang-orang di seluruh dunia
+                            untuk mengambil
+                            tindakan dan memberikan dampak positif terhadap lingkungan. </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="kalimat-penutup" id="join-us">
+            <section class="hidden-right">
+                <div class="kalimat-penutup-container">
+                    <p>"Ayo bersama-sama kita jaga bumi, mulailah dari hal-hal kecil seperti mengurangi penggunaan
+                        plastik
+                        sekali pakai, memilah sampah, dan hemat energi. Setiap tindakan kecil kita akan berdampak besar
+                        bagi
+                        bumi kita yang tercinta."</p>
+                </div>
+            </section>
+        </section>
+        <section class="section-footer">
+            <footer class="container-footer">
+                <div class="footer-content">
+                    <h2>TEAM EARTH</h2>
+                    <p>From Bunda Mulia University</p>
+                </div>
+                <div class="footer-content">
+                    <h1>Our Team</h1>
+                    <ul>
+                        <li><a href="https://www.instagram.com/fikrinurdiega_/">Fikri Nur Diega</a></li>
+                        <li><a href="https://www.instagram.com/noty_silly/">Handi Kurniawan</a></li>
+                        <li><a href="https://www.instagram.com/glensjo/">Glenda Jocelyn Hendri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h1>Site Map</h1>
+                    <ul>
+                        <li><a href="#hero-section">Started</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#how-to">How to?</a></li>
+                        <li><a href="#join-us">Join Us</a></li>
+                    </ul>
+                </div>
+
+            </footer>
+
+        </section>
+        <!-- Mouse effect -->
+        <div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>
